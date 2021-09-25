@@ -13,8 +13,15 @@ function generatePassword() {
   var characters = "";
 //how many characters?
   var length = prompt("How many characters should the password contain?  Please choose between 8-128");
-  if (length < 8 === true || length > 128 === true) {
-    alert("Please choose between 8-128 characters");
+  while (true) {
+    if (length < 8 || length > 128) {
+    alert("Please choose between 8-128 characters")
+    prompt("How many characters should the password contain?  Please choose between 8-128");
+    }
+    else (false) 
+      
+    
+    break;
   }
   
   //use else statement to wrap around the other conditions so user does not have to refresh 
@@ -49,7 +56,6 @@ function generatePassword() {
   console.log(password);
   returnPassword.innerText = password;
   return password;
-
 }
 
 
