@@ -18,9 +18,7 @@ function generatePassword() {
     alert("Please choose between 8-128 characters")
     prompt("How many characters should the password contain?  Please choose between 8-128");
     }
-    else (false) 
-      
-    
+    else (false); 
     break;
   }
   
